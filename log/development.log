@@ -423,3 +423,290 @@ Migrating to RemoveNameFromLists (20191107060921)
   ↳ bin/rails:9
   [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 07:54:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 2660ms (Views: 2430.7ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 07:55:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/vagrant/sample_app/app/controllers/todolists_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/todolists_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 07:56:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 904ms (Views: 842.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 07:57:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (66.4ms)
+Completed 500 Internal Server Error in 439ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__2713602714412689827_69947267028020'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__2713602714412689827_69947267028020'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 07:59:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (29.3ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__2713602714412689827_69947271619000'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__2713602714412689827_69947271619000'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:00:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (34.5ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__2713602714412689827_69947239978160'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__2713602714412689827_69947239978160'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:03:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (119.6ms)
+Completed 500 Internal Server Error in 581ms (ActiveRecord: 23.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__4415186997764007462_47400305437600'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__4415186997764007462_47400305437600'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:04:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__4415186997764007462_47400300065460'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__4415186997764007462_47400300065460'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:13:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__1580858783258639136_47107497603740'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__1580858783258639136_47107497603740'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:15:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (38.7ms)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 10.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb___2805345580949506887_47461207825340'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb___2805345580949506887_47461207825340'
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:18:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (41.5ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 8.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<List id: nil, created_at: nil, updated_at: nil>):
+    2: <!--form_for部分-->
+    3: <%= form_for(@list, url: '/todolists') do |f| %>
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+  
+app/views/todolists/new.html.erb:5:in `block in _app_views_todolists_new_html_erb__4433908085402549401_47229936390780'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb__4433908085402549401_47229936390780'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddTitleToLists (20191107082314)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (11.3ms)[0m  [1m[35mALTER TABLE "lists" ADD "title" text[0m
+  ↳ db/migrate/20191107082314_add_title_to_lists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191107082314"]]
+  ↳ bin/rails:9
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:23:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (47.2ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<List id: nil, created_at: nil, updated_at: nil, title: nil>):
+    4: 	<h4>タイトル</h4>
+    5: 	<%= f.text_field :title %>
+    6: 	<h4>本文</h4>
+    7: 	<%= f.text_area :body %>
+    8: 	<%= f.submit '投稿' %>
+    9: <% end %>
+  
+app/views/todolists/new.html.erb:7:in `block in _app_views_todolists_new_html_erb___4371887010660410476_46956782778540'
+app/views/todolists/new.html.erb:3:in `_app_views_todolists_new_html_erb___4371887010660410476_46956782778540'
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddBodyToLists (20191107082434)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[35mALTER TABLE "lists" ADD "body" text[0m
+  ↳ db/migrate/20191107082434_add_body_to_lists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191107082434"]]
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/todolists/new" for 10.0.2.2 at 2019-11-07 08:24:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 1006ms (Views: 933.5ms | ActiveRecord: 9.6ms)
+
+
+Started POST "/todolists" for 10.0.2.2 at 2019-11-07 08:25:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HnViuIpyh/jrOWNNbmYgAYBtbKm3nH8HoPPl6391lsO2OgXHP5wpIjrj9wFOowW+QaGut6uTdsbhv5LT18IWRw==", "list"=>{"title"=>"", "body"=>""}, "commit"=>"投稿"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:12
+  [1m[36mList Create (17.3ms)[0m  [1m[32mINSERT INTO "lists" ("created_at", "updated_at", "title", "body") VALUES (?, ?, ?, ?)[0m  [["created_at", "2019-11-07 08:25:22.621456"], ["updated_at", "2019-11-07 08:25:22.621456"], ["title", ""], ["body", ""]]
+  ↳ app/controllers/todolists_controller.rb:12
+  [1m[35m (17.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:12
+Redirected to http://localhost:3000/top
+Completed 302 Found in 63ms (ActiveRecord: 34.7ms)
+
+
+Started GET "/top" for 10.0.2.2 at 2019-11-07 08:25:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RootController#top as HTML
+  Rendering root/top.html.erb within layouts/application
+  Rendered root/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 853ms (Views: 757.7ms | ActiveRecord: 0.0ms)
+
+
