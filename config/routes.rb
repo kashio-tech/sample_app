@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   	#.../todolists/１や.../todolists/3に該当する
   	get 'todolists/:id/edit' => 'todolists#edit', as: 'edit_todolist'
   	patch 'todolists/:id' => 'todolists#update', as: 'update_todolist'
+  	delete 'todolists/:id' => 'todolists#destroy', as: 'destroy_todolist'
 end
